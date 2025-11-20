@@ -61,6 +61,8 @@ header {
     margin-top: 40px;
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 
@@ -105,6 +107,7 @@ header {
     box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
 }
 
+
 .text-box p {
     font-size: 10px;
     width: 240px;
@@ -114,60 +117,116 @@ header {
 
 
 
-.happening-now {
-    width: 100%;
-    margin-top: 60px;
-    display: block;
-}
+    
 
-.hn-title {
+.h-title {
+    width: 196px;
+    height: 28px;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
-    font-family: Roboto;
     font-weight: 800;
-    color: #000;
+    color: #000000;
     margin-bottom: 20px;
 }
 
-.hn-container {
+
+.h-container {
     display: flex;
     gap: 20px;
-    width: 100%;
 }
 
-.hn-left {
+
+.h-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.big-img img {
+
+.big-photo img {
     width: 758px;
     height: 430px;
     border-radius: 5px;
+    object-fit: cover;
+    position: relative;
 }
 
-.big-text {
+
+.big-photo {
     position: relative;
-    top: -100px;
-    left: 30px;
-    padding: 5px 10px;
-    background: rgba(0,0,0,0.40);
-    width: fit-content;
-    color: #fff;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    border-radius: 4px;
+    width: 202px;
+    height: 23px;
+    text-align: center;
 }
 
-.hn-right {
+
+.h-right {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.small-img {
+
+.small-photo img {
     width: 362px;
     height: 212px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+
+ 
+.footer-box {
+    width: 100%;
+    height: 201px;
+    background-color: #243043;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-inner {
+    width: 1,440px;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+
+.footer-col p {
+    color: #818687;
+    font-size: 14px;
+    margin: 6px 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+
+.footer-text {
+    color: #ffffff;
+    width: 248px;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400; 
+    line-height: 16px;
+    margin-left: 40px;
+}
+
+
+.footer-logo img {
+    width: 60px; 
+    height: auto;
+    margin-left: auto;
 }
